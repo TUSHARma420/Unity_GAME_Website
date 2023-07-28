@@ -1,0 +1,89 @@
+.nav-bar__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-bar {
+  background: linear-gradient(45deg, #FFC107, #E91E63, #2196F3, #4CAF50); /* Use your desired color stops and directions */
+  padding: 10px 20px; /* Adjust the padding to control the height */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+  transition: background-color 0.3s ease;
+  position: relative;
+  background: linear-gradient(45deg, #FFC107, #E91E63, #2196F3, #4CAF50);
+  background-size: 200% 200%; /* Increase the background size */
+  animation: gradientAnimation 5s linear infinite; /* Add an animation */ /* Add a smooth transition effect for background color */
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%; /* Start the animation from the left */
+  }
+  50% {
+    background-position: 100% 50%; /* Move the background to the right */
+  }
+  100% {
+    background-position: 0% 50%; /* Move the background back to the left */
+  }
+}
+.nav-bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2); /* Add a semi-transparent overlay */
+  transition: width 0.3s ease; /* Add a transition effect for width */
+}
+
+.nav-bar:hover::before {
+  width: 50%; /* Expand the overlay on hover */
+}
+
+.nav-bar:hover {
+  background-color: #FF5722; /* Change the background color on hover */
+}
+
+
+.nav-bar__logo {
+  display: flex;
+  align-items: center;
+  border-radius: 50%; /* Add border radius to make it round */
+  padding: 5px; /* Add padding for spacing */
+}
+
+.nav-bar__logo img {
+  max-width: 50px; /* Increase the maximum width as needed */
+  height: auto;
+  border-radius: 50%; /* Maintain the round shape of the logo */
+}
+
+.nav-bar__menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar__menu li {
+  margin-right: 10px;
+}
+
+.nav-bar__menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold; /* Add font weight for a bold appearance */
+  border-radius: 10px; /* Add rounded corners to menu links */
+  padding: 8px 12px; /* Adjust padding for better spacing */
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background color */
+}
+
+.nav-bar__menu li a:hover {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.2); /* Add a background color on hover */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow on hover */
+}

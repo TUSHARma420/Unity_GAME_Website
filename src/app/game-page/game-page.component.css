@@ -1,0 +1,219 @@
+.information-section {
+  text-align: center;
+  padding: 50px;
+  background-color: #f5f5f5;
+}
+
+.information-section h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.postcards {
+  display: flex;
+  /* justify-content: center; */
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.postcard {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  overflow: hidden;
+  transition: width 0.3s ease, height 0.3s ease;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.postcard:hover {
+  width: 400px;
+  height: 400px;
+  z-index: 2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.postcards:hover .postcard:not(:hover) {
+  filter: blur(4px);
+}
+
+.postcard h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.postcard p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.expanded-content {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 14px;
+  z-index: 3;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.postcard:hover .expanded-content {
+  display: block;
+}
+
+.postcards:hover .postcard:not(:hover) {
+  filter: blur(4px);
+}
+
+.postcard h3 {
+  margin: 0;
+}
+
+.postcard p {
+  margin: 10px 0;
+}
+
+.expanded-content {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 14px;
+  z-index: 3;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.postcard:hover .expanded-content {
+  display: block;
+}
+
+.postcard h3 {
+  font-size: 24px;
+  color: #337ab7;
+  margin-bottom: 10px;
+}
+
+.postcard p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  .postcards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.game-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.game-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.game-item img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.game-name {
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.buttonn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  color: blue;
+  text-decoration: underline;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.buttonn:hover {
+  color: navy;
+}
+
+.game-page {
+  text-align: center;
+  padding: 50px;
+  background-image: url('https://media.istockphoto.com/id/1300745815/photo/modern-studio-background-modern-and-simple-abstract-white-gradient-background-modern-empty.webp?b=1&s=170667a&w=0&k=20&c=6Bh3JRZivv27E57Xy_mxYQLm37s2oqlVzetyb7dXBaw=');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+table td {
+  padding: 10px;
+  border: 1px solid #999;
+}
+
+h1 {
+  font-size: 48px;
+  color: #000000;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(to right, #337ab7, #e74c3c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-size: 48px;
+  color: #c11010;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(223, 21, 21, 0.5);
+  background-image: linear-gradient(to right, #337ab7, #e74c3c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.game-item:hover {
+  transform: scale(1.05);
+}
+
+.game-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}

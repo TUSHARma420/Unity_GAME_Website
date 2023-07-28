@@ -1,0 +1,63 @@
+<app-nav></app-nav>
+
+<div class="game-page">
+  <h1>{{ translateText('Unity Games') }}</h1>
+  <div class="game-list">
+    <a routerLink="/game1" class="game-item">
+      <img src="https://c4.wallpaperflare.com/wallpaper/736/423/581/8k-4k-prey-2017-games-wallpaper-preview.jpg" alt="{{ translateText('Game 1') }}" />
+      <span class="game-name">{{ translateText('Ball Passing') }}</span>
+    </a>
+    <a routerLink="/game2" class="game-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnOtdkgvkoRBffrqmM9ZN-hUqVC-8FaYSOyg&usqp=CAU" alt="{{ translateText('Game 2') }}" />
+      <span class="game-name">{{ translateText('Random Team Maker') }}</span>
+    </a>
+    <a routerLink="/game3" class="game-item">
+      <img src="https://wallpapercrafter.com/desktop3/1000233-minimalistic-blue-background-knowledge-mathematics.jpg" alt="{{ translateText('Game 2') }}" />
+      <span class="game-name">{{ translateText('Maths Unity') }}</span>
+    </a>
+    <!-- Add more game items with their respective logos and click handlers -->
+  </div>
+</div>
+
+<section class="information-section">
+  <h2>{{ translateText('UNITY Blogs') }}</h2>
+  <div class="postcards">
+    <div class="postcard">
+      <h3>{{ translateText("Don't Burn (Lakshmi Bombs) Crackers") }}</h3>
+      <p>{{ translateText('Whenever you visit a city, please avoid burning crackers, especially Lakshmi bombs, to protect the environment and promote a cleaner and healthier celebration.') }}</p>
+    </div>
+    <div class="postcard">
+      <h3>{{ translateText('Science Museum & Government Library') }}</h3>
+      <p>{{ translateText("Make sure to allocate at least one day during your visit to a city to explore the local science museum and government library. It's a great opportunity to learn and explore new things.") }}</p>
+    </div>
+    <div class="postcard">
+      <h3>{{ translateText('www.nic.gov.in') }}</h3>
+      <p>{{ translateText('Visit the official website of the Government of India (www.nic.gov.in) to access valuable information, resources, and services provided by various government departments and agencies.') }}</p>
+    </div>
+    <div class="postcard">
+      <h3>{{ translateText('Employment Newspaper') }}</h3>
+      <p>{{ translateText('Make it a habit to check the Employment Newspaper weekly to stay updated on job opportunities and increase your chances of finding a good job that suits your skills and interests.') }}</p>
+    </div>
+    <div class="postcard">
+      <h3>{{ translateText('Promote Swadeshi') }}</h3>
+      <p>{{ translateText('Support the Swadeshi (Buy Indian) movement by consciously choosing and promoting Indian-made products and services. This helps in boosting the local economy and preserving traditional industries.') }}</p>
+    </div>
+    <div class="postcard">
+      <h3>{{ translateText("Celebrating India's Cultural Diversity: Embracing Unity in Diversity") }}</h3>
+      <p>{{ translateText("India is renowned for its rich cultural diversity, encompassing various traditions, festivals, and languages. This article delves into the beauty of India's cultural tapestry and emphasizes the importance of celebrating and respecting diverse cultural practices. By highlighting the common threads that connect different communities across the country, the article promotes unity and fosters a sense of pride in India's multicultural heritage.") }}</p>
+    </div>
+    <div class="postcard">
+      <h3>{{ translateText('Volunteering for Social Causes: Uniting Indians through Service') }}</h3>
+      <p>{{ translateText('Volunteering is a powerful tool that brings people from diverse backgrounds together to work towards a common social cause. This article explores the impact of volunteerism in India, highlighting inspiring stories of individuals and organizations that have successfully united people across communities to create positive change. It emphasizes the transformative power of collective action and encourages readers to engage in volunteer work as a means to promote unity and social cohesion.') }}</p>
+    </div>
+    <div class="postcard">
+      <h3>{{ translateText('Embracing Regional Cuisine: Strengthening Bonds through Food') }}</h3>
+      <p>{{ translateText('Food has long been recognized as a unifying element in India, and this article delves into the diverse culinary traditions of different regions. By showcasing the unique flavors, ingredients, and cooking techniques from various parts of the country, the article emphasizes how regional cuisine can bridge cultural gaps and foster a sense of unity. It encourages readers to explore and appreciate the culinary diversity of India as a way to strengthen bonds and promote cross-cultural understanding.') }}</p>
+    </div>
+  
+    <!-- Add more postcards with relevant information -->
+  </div>
+</section>
+
+<a class="buttonn" (click)="changeLanguage('kannada')">Kannada</a>
+<a class="buttonn" (click)="changeToEnglish()">English</a>

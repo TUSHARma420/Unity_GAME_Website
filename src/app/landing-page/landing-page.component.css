@@ -1,0 +1,137 @@
+.landing-page {
+    text-align: center;
+    padding: 50px;
+    background-image: url('https://wallpaperaccess.com/full/26979.jpg'); /* Update with the direct image link */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+  }
+  .landing-page {
+    text-align: center;
+    padding: 50px;
+  }
+  .res{
+    font-size: 45px;
+    color: #2178c4;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 40px;
+  }
+
+  .buttonn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: blue;
+    text-decoration: underline;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .buttonn:hover {
+    color: navy;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+
+  .benefits-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .benefit {
+    width: 300px;
+    padding: 20px;
+    margin: 0 20px;
+    background-color: #f5f5f5;
+    border-radius: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .benefit:hover {
+    transform: translateY(-5px);
+  }
+  
+  .benefit img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+  }
+  
+  .benefit h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .benefit p {
+    font-size: 16px;
+    color: #777;
+    line-height: 1.5;
+    margin-bottom: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  
+  h1 {
+    font-size: 48px;
+    color: #FFF;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+   
+ 
+  
+  p {
+    font-size: 24px;
+    color: #FFF;
+    margin-bottom: 60px;
+  }
+  
+  .logo {
+    font-size: 120px;
+    color: #FF5722;
+    margin-bottom: 30px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #FF5722;
+    color: #FFF;
+    font-size: 24px;
+    text-decoration: none;
+    /* border-radius: 8px; */
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #E64A19;
+  }

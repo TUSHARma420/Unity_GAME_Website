@@ -1,0 +1,27 @@
+<div class="landing-page">
+  <h1 class="res">{{ translateText('Welcome to Unity App') }}</h1>
+  <h1>{{ translateText('Unity is Strength') }}</h1>
+  <p>{{ translateText('Experience the power of unity and collaboration.') }}</p>
+  <a routerLink="/game" class="cta-button">{{ translateText('Get Started') }}</a>
+
+  <div class="benefits-section">
+    <div class="benefit">
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/021/639/700/original/4k-motion-design-of-team-business-goal-teamwork-collaboration-to-achieve-target-businessman-and-woman-people-help-holding-dart-aiming-on-bullseye-target-free-video.jpg" alt="Teamwork" />
+      <h2>{{ translateText('Collaboration') }}</h2>
+      <p>{{ translateText('Work together towards common goals and achieve greatness.') }}</p>
+    </div>
+    <div class="benefit">
+      <img src="https://media.istockphoto.com/id/1344939844/photo/hand-holding-drawing-virtual-lightbulb-with-brain-on-bokeh-background-for-creative-and-smart.jpg?s=612x612&w=0&k=20&c=2GLUy6eqCSr0NFRO8CHm8_PUMy9Qc8ryqcsRoe0DEYM=" alt="Innovation" />
+      <h2>{{ translateText('Innovation') }}</h2>
+      <p>{{ translateText('Explore new ideas and push the boundaries of what is possible.') }}</p>
+    </div>
+    <div class="benefit">
+      <img src="https://devostock.com/static12/preview2/stock-photo-devostock-silhouette-five-people-shadow-jumping-sunset-background-success-win-4k-179782.jpg" alt="Success" />
+      <h2>{{ translateText('Success') }}</h2>
+      <p>{{ translateText('Achieve success by leveraging the power of unity.') }}</p>
+    </div>
+  </div>
+</div>
+
+<a class="buttonn" (click)="changeLanguage('kannada')">Kannada</a>
+<a class="buttonn" (click)="changeToEnglish()">English</a>

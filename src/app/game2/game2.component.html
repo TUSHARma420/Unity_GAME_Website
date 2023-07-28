@@ -1,0 +1,39 @@
+<app-nav></app-nav>
+<div class="game-container">
+  <h2 class="title">Unity Team Maker <i class="fas fa-users"></i></h2>
+
+  <div class="player-list">
+    <h3>Players:</h3>
+    <ul>
+      <li *ngFor="let player of players"><i class="fas fa-user"></i> {{ player }}</li>
+    </ul>
+  </div>
+
+  <div class="add-remove-player">
+    <div class="add-player">
+      <input type="text" placeholder="Enter player name" [(ngModel)]="newPlayerName" />
+      <button class="btn" (click)="addPlayer(newPlayerName)"><i class="fas fa-plus"></i> Add Player</button>
+    </div>
+
+    <div class="remove-player">
+      <input type="text" placeholder="Enter player name" [(ngModel)]="playerToRemove" />
+      <button class="btn" (click)="removePlayer(playerToRemove)"><i class="fas fa-minus"></i> Remove Player</button>
+    </div>
+  </div>
+
+  <div class="team-size">
+    <h3>Team Size:</h3>
+    <input type="number" min="1" [(ngModel)]="teamSize" />
+  </div>
+
+  <div class="team-results">
+    <h3>Teams:</h3>
+    <ul *ngFor="let team of getTeams(); let i = index">
+      <li><i class="fas fa-users"></i> Team {{ i + 1 }}</li>
+      <ul>
+        <li *ngFor="let player of team"><i class="fas fa-user"></i> {{ player }}</li>
+      </ul>
+    </ul>
+  </div>
+  
+</div>

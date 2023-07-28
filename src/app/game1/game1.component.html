@@ -1,0 +1,30 @@
+<app-nav>
+</app-nav>
+<div class="game-container">
+  <h2>Cooperative Ball Game</h2>
+  
+  <div class="instructions">
+    <h3>Instructions:</h3>
+    <p>1. The ball starts with <span class="player-name">{{ currentPlayer }}</span>.</p>
+    <p>2. Click "Pass Ball" to pass the ball to the next player.</p>
+    <p>3. The players need to collaborate and pass the ball to <span class="player-name">Player 1</span> to win.</p>
+    <p>4. The ball possession will cycle through the players in order.</p>
+    <p>5. Enjoy the game and remember that unity is strength!</p>
+  </div>
+  
+  <div class="players">
+    <div class="player" *ngFor="let player of players" [ngClass]="{ active: currentPlayer === player }">
+      <h3 class="player-name">{{ player }}</h3>
+      <button *ngIf="currentPlayer === player" (click)="passBall(player)">Pass Ball</button>
+    </div>
+  </div>
+  
+  <div class="ball" [ngClass]="{ active: ballPossession !== null }">
+    <span *ngIf="ballPossession !== null">Ball Possession: <span class="player-name">{{ ballPossession }}</span></span>
+  </div>
+  
+  <div class="message" *ngIf="gameOver">
+    <h3>Game Over!</h3>
+    <p>The players successfully collaborated to win!</p>
+  </div>
+</div>
